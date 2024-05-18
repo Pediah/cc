@@ -1,85 +1,76 @@
+/* Google Fonts Import */
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
+/* Body Styling */
 .body-home, .body-login {
     background: url(../img/bg.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
 
+/* Background Overlay */
 .black-fill {
     background: rgba(0,0,0, 0.7);
     min-height: 100vh;
 }
 
+/* Navbar Styling */
 #homeNav {
     background: rgba(255,255,255, 0.5) !important;
 }
 
-.welcome-text {
-    min-height: 80vh;
-}
-
-.welcome-text img {
-    width: 100px;
-}
-
-/* Increase logo size in navbar */
-.navbar-brand img {
-    width: 150px; /* Adjust as needed */
-    height: 100px; /* Adjust as needed */
-}
-
-.welcome-text h4 {
-    color: #eee;
-    font-size: 51px;
-    font-family: 'Lobster', cursive;
-}
-
-.welcome-text p {
-    color: #222;
-    background: rgba(255,255,255, 0.5);
-    padding: 5px;
-    border-radius: 4px;
-}
-
-#about {
-    min-height: 100vh;
-}
-
-#about .card-1 {
-    max-width: 600px;
-    width: 90%;
-    background: rgba(255,255,255, 0.5);
-    padding: 20px;
-    border-radius: 5px;
-}
-
-#about .card-1 h5 {
-    font-family: 'Lobster', cursive;
-    font-size: 28px;
-}
-
+/* Contact Section */
 #contact {
     min-height: 100vh;
 }
 
-#contact form {
-    max-width: 600px;
-    width: 90%;
-    background: rgba(255,255,255, 0.5);
-    padding: 20px;
-    border-radius: 5px;
+/* About Section */
+#about {
+    /* CSS styles for the 'about' section */
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 40px;
 }
 
-#contact form h3 {
-    text-align: center;
-    font-family: 'Lobster', cursive;
+
+/* About Item Styling */
+.about-item {
+    background-color: #ccc; /* Grey background */
+    padding: 20px; /* Add padding inside the div */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center align content */
+    margin: 10px; /* Add margin around each item for spacing */
+    width: 80%; /* Set width of items */
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    align-self: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.about-item img {
+    max-width: 30%;
+    min-width: 200px;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50px; /* Rounded corners for images */
+    margin-bottom: 20px; /* Add some space below the image */
+    display: flex;
 }
 
-textarea {
-    resize: none;
+
+.text h4 {
+    font-size: 30px; /* Set font size for header text */
+    margin-bottom: 20px; /* Add some space below the header text */
 }
 
+.text p {
+    font-size: 20px;
+    margin-bottom: 5px; /* Remove bottom margin of the paragraph */
+}
+
+/* Login Section */
 .login {
     max-width: 500px;
     width: 90%;
@@ -93,6 +84,7 @@ textarea {
     font-size: 50px;
 }
 
+/* Additional Width Styling */
 .w-450 {
     width: 450px;
 }
