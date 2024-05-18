@@ -7,10 +7,13 @@
     background-size: cover;
     background-attachment: fixed;
 }
+.container{
+    width: auto;
+}
 
 /* Background Overlay */
 .black-fill {
-    background: rgba(0,0,0, 0.7);
+    background:black;
     min-height: 100vh;
 }
 
@@ -27,7 +30,7 @@
 /* About Section */
 #about {
     /* CSS styles for the 'about' section */
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -37,26 +40,25 @@
 
 /* About Item Styling */
 .about-item {
-    background-color: #ccc; /* Grey background */
+    background-color: transparent; /* Grey background */
     padding: 20px; /* Add padding inside the div */
     border-radius: 5px; /* Rounded corners */
     text-align: center; /* Center align content */
     margin: 10px; /* Add margin around each item for spacing */
     width: 80%; /* Set width of items */
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+    align-items:baseline;
     align-self: center;
-    flex-wrap: wrap;
-    flex-direction: row;
+    flex-wrap: nowrap;
 }
 .about-item img {
-    max-width: 30%;
-    min-width: 200px;
+    max-width: 20%;
+    min-width: 150px;
     height: auto; /* Maintain aspect ratio */
     border-radius: 50px; /* Rounded corners for images */
     margin-bottom: 20px; /* Add some space below the image */
     display: flex;
+    margin: 0 auto;
 }
 
 
