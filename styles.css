@@ -132,7 +132,7 @@ html {
 .text p {
     font-size: 20px;
     margin-bottom: 5px; /* Remove bottom margin of the paragraph */
-    padding-top: 15px;
+    padding-top: 25px;
 }
 
 /* Login Section */
