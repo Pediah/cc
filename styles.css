@@ -2,13 +2,90 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 /* Body Styling */
-.body-home, .body-login {
-    background: url(../img/bg.jpg);
+.body-home{
+    background: black;
     background-size: cover;
     background-attachment: fixed;
+    font-family: 'Manrope', sans-serif;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
 }
+
+
+
 .container{
     width: auto;
+}
+
+/* cards css*/
+
+:root {
+    --background: #1F2336;
+    --scrollbar-background: #313852;
+    --text: #F1F1F1;
+    --text-active: #F1F1F180;
+}
+  
+html {
+    scroll-behavior: smooth;
+}
+
+.card:nth-child(1) {
+    background-image: linear-gradient(to bottom, #9377F2, #6250D7);
+}
+  
+.card:nth-child(2) {
+    background-image: linear-gradient(to bottom, #E5866C, #DF795D);
+}
+
+.containers {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    padding: 1rem;
+    max-width: 14rem;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+  
+.cards {
+    min-width: 14rem;
+    min-height: 14rem;
+    color: var(--text);
+    display: flex;
+    font-weight: 600;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    transition: all 0.2s;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    scroll-snap-align: start;
+}
+  
+.cards:nth-child(3) {
+    background-image: linear-gradient(to bottom, #5866E4, #4D5AD9);
+}
+  
+  .cards:nth-child(4) {
+    background-image: linear-gradient(to bottom, #97BF42, #75AA29);
+}
+
+
+.containers::-webkit-scrollbar {
+    height: 0.7rem;
+}
+.containers::-webkit-scrollbar-track {
+    background: var(--scrollbar-background);
+    border-radius: 40rem;
+}
+.containers::-webkit-scrollbar-thumb {
+    background: var(--text);
+    border-radius: 40rem;
 }
 
 /* Background Overlay */
