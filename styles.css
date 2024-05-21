@@ -82,8 +82,7 @@ html {
 /* Contact Section */
 #contact {
     min-height: 100vh;
-    min-width: 90%;
-    align-items: center;
+    min-width: 500px;
 }
 
 /* About Section */
