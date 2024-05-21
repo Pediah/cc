@@ -82,7 +82,7 @@ html {
 /* Contact Section */
 #contact {
     min-height: 100vh;
-    min-width: 100vh;
+    min-width: 90%;
     align-items: center;
 }
 
