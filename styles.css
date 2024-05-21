@@ -82,7 +82,7 @@ html {
 /* Contact Section */
 #contact {
     min-height: 100vh;
-    width: 90vh;
+    min-width: 50vh;
 }
 
 /* About Section */
