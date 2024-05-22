@@ -93,32 +93,56 @@
             
   <section id="contact" class="d-flex justify-content-center align-items-center flex-column">
       <form action="https://api.web3forms.com/submit">
-                    <h3>Contact Us</h3>
-                    <?php if (isset($_GET['error'])) { ?>
-                    <div class="alert alert-danger" role="alert">
-                    </div>
-                    <?php } ?>
-                    <?php if (isset($_GET['success'])) { ?>
-                      <div class="alert alert-success" role="alert">
-                       <?=$_GET['success']?>
-                      </div>
-                    <?php } ?>
-                  <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                  </div>
-                  <div class="mb-3">
-                    <label class="form-label">Full Name</label>
-                    <input type="text" name="full_name" class="form-control">
-                  </div>
-                  <div class="mb-3">
-                    <label class="form-label">Message</label>
-                    <textarea class="form-control"name="message" rows="4"></textarea>
-                  </div>
-                  <button type="submit" class="btn btn-primary">Send</button>
-                </form>
-            </section>
+        <input type="hidden" name="access_key" value="766bd851-2b2c-481d-87f3-cd81e65201ff">
+        <h3>Contact Us</h3>
+        <div class="alert alert-danger d-none" role="alert" id="alert"></div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" required>
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="full_name" class="form-label">Full Name</label>
+          <input type="text" name="full_name" class="form-control" id="full_name" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" name="message" id="message" rows="4" required></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="day-slot" class="form-label">Preferred Day:</label>
+          <select name="day-slot" id="day-slot" class="form-select" required>
+            <option value="">Select a day</option>
+            <option value="Sunday">Sunday</option>
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="time-slot" class="form-label">Preferred Time Slot:</label>
+          <select name="time-slot" id="time-slot" class="form-select" required>
+            <option value="">Select a time slot</option>
+            <optgroup label="Sunday">
+              <option value="7pm-9pm">7:00 PM to 9:00 PM</option>
+              <option value="9:30pm-11:30pm">9:30 PM to 11:30 PM</option>
+            </optgroup>
+            <optgroup label="Monday - Friday">
+              <option value="7pm-9pm">7:00 PM to 9:00 PM</option>
+              <option value="9:30pm-11:30pm">9:30 PM to 11:30 PM</option>
+            </optgroup>
+            <optgroup label="Saturday">
+              <option value="10am-12pm">10:00 AM to 12:00 PM</option>
+              <option value="12pm-2pm">12:00 PM to 2:00 PM</option>
+            </optgroup>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+      </form>
+    </section>
     
     <script>
       document.getElementById('day-slot').addEventListener('change', function () {
